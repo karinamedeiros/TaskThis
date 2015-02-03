@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:measureWithLargestChild="false"
+    android:orientation="vertical"
+    android:showDividers="beginning" >
+
+    <EditText
+        android:id="@+id/description_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+ 
+
+    <TextView
+        android:id="@+id/text_mover_para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mover para:" />
+
+    <RadioGroup
+        android:id="@+id/radio_pastas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio_inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Inbox" />
+
+        <RadioButton
+            android:id="@+id/radio_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+        <RadioButton
+            android:id="@+id/radio_commitment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commitment" />
+
+        <RadioButton
+            android:id="@+id/radio_waiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting" />
+
+        <RadioButton
+            android:id="@+id/radio_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project" />
+    </RadioGroup>
+    
+    <CheckBox
+            android:id="@+id/check_mudar_para_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_do"
+            android:textColor="#FFA500" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5.38"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/done_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done!" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal|fill_horizontal"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete" />
+    </LinearLayout>
+
+</LinearLayout>
